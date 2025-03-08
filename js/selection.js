@@ -1,20 +1,21 @@
-function selectById(){
-   const h1 = document.getElementById("titulo");
+function selectById() {
+   const titulo = document.getElementById('titulo');
 
-   console.log(h1);
+   console.log(titulo);
 }
+
+function selectByClass() {
+   const paragrafos = document.getElementsByClassName('paragrafo');
+
+   console.log(paragrafos);
+}
+
+function selectByTag() {
+   const itens = document.getElementsByTagName('li');
+
+   console.log(itens);
+}
+
 selectById();
-
-function selectByClass(){
-    const paragrafo = document.getElementsByClassName("paragrafo");
- 
-    console.log(paragrafo);
- }
- selectByClass();
-
- function selectQuerySelector(){
-    const paragrafo = document.querySelector("p.paragrafo");
- 
-    console.log(paragrafo);
- }
- selectQuerySelector()
+selectByClass();
+selectByTag();
